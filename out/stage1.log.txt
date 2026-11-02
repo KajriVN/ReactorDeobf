@@ -1,0 +1,8 @@
+﻿[*] Yhosh, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null  types=411
+[!] DYNAMIC MODE: the protector's runtime code will execute in this process. Isolated lab VM only.
+[+] delegate map: resource 'WHElmCFruqIvsgO8HQ.gkDUHSYIwa4WvZZxGJ' (308 entries)
+[+] constant predicate helpers: 109
+[+] opaque constants: <Module>{51823506-fe87-468c-875b-205dcea5e3b4} (106 fields)
+[+] string decryptors: BdKi3KNJpUhg0qT3Rma::vhgNMSuGxM
+[+] int constant tables / CF helpers: 0
+[+] string(string,int) helpers: 

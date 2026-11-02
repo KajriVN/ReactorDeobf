@@ -1,0 +1,25 @@
+﻿[*] Piatm, Version=1.0.9778.5975, Culture=neutral, PublicKeyToken=null  types=129
+[!] DYNAMIC MODE: the protector's runtime code will execute in this process. Isolated lab VM only.
+[-] no delegate map found (no proxy calls?)
+[+] constant predicate helpers: 155
+[+] opaque constants: <Module>{382b5df0-1a0a-4db2-ae02-9fb90fc0a939} (102 fields)
+[+] string decryptors: bYn8iVcq2efj6s0GQNh::bIac9WHcPg
+[+] int constant tables / CF helpers: 23
+[+] string(string,int) helpers: SjvSy5qg2os6HKPRMu7::h9jqIhAYpA, VF9ixsdgRDLhZcp2JkH::e2AdI3Epm2
+
+=== Summary ===
+  branches folded              2816
+  fields renamed               436
+  int-table calls folded       4046
+  methods renamed              590
+  opaque constants folded      2368
+  predicate calls inlined      202
+  string helpers folded        320
+  strings decrypted            184
+  types renamed                106
+  unflatten: dead stores removed 4007
+  unflatten: edges threaded    15999
+  unflatten: methods reverted  0
+  unflatten: unreachable insns removed 87764
+[+] written .\final\stage2.deobf.dll.infected
+[+] strings -> .\final\stage2.strings.txt (145)

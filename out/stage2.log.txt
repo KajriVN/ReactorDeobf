@@ -1,0 +1,8 @@
+﻿[*] Piatm, Version=1.0.9778.5975, Culture=neutral, PublicKeyToken=null  types=129
+[!] DYNAMIC MODE: the protector's runtime code will execute in this process. Isolated lab VM only.
+[-] no delegate map found (no proxy calls?)
+[+] constant predicate helpers: 155
+[+] opaque constants: <Module>{382b5df0-1a0a-4db2-ae02-9fb90fc0a939} (102 fields)
+[+] string decryptors: bYn8iVcq2efj6s0GQNh::bIac9WHcPg
+[+] int constant tables / CF helpers: 23
+[+] string(string,int) helpers: SjvSy5qg2os6HKPRMu7::h9jqIhAYpA, VF9ixsdgRDLhZcp2JkH::e2AdI3Epm2

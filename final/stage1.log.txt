@@ -1,0 +1,24 @@
+﻿[*] Yhosh, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null  types=411
+[!] DYNAMIC MODE: the protector's runtime code will execute in this process. Isolated lab VM only.
+[+] delegate map: resource 'WHElmCFruqIvsgO8HQ.gkDUHSYIwa4WvZZxGJ' (308 entries)
+[+] constant predicate helpers: 109
+[+] opaque constants: <Module>{51823506-fe87-468c-875b-205dcea5e3b4} (106 fields)
+[+] string decryptors: BdKi3KNJpUhg0qT3Rma::vhgNMSuGxM
+[+] int constant tables / CF helpers: 0
+[+] string(string,int) helpers: 
+
+=== Summary ===
+  branches folded              2099
+  fields renamed               656
+  methods renamed              1157
+  opaque constants folded      167
+  predicate calls inlined      1790
+  proxy calls restored         2732
+  strings decrypted            17
+  types renamed                382
+  unflatten: dead stores removed 3883
+  unflatten: edges threaded    6345
+  unflatten: methods reverted  0
+  unflatten: unreachable insns removed 22023
+[+] written .\final\stage1.deobf.exe.infected
+[+] strings -> .\final\stage1.strings.txt (13)
